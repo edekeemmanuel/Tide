@@ -83,14 +83,15 @@
           display:flex;
         }
         .about p{
-          color:black;
+          color:#000000;
           font-size:16px;
-          border: 4mm ridge rgb(5, 5, 5, 0.3);
+          border: 4mm ridge rgb(0, 0, 255, 0.5);
           padding-left: 15px;
           padding-right:10px;
           padding-top: 5px;
           padding-bottom:5px;
           text-align:justify;
+          background-color:white;
         }
         .goal {
           display:flex;
@@ -112,7 +113,7 @@
           padding-left:50px;
           padding-right:30px;
           text-align: center;
-          color:#CF6E00;
+          color:red;
         }
 
         @media (prefers-color-scheme: light) {
