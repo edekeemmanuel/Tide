@@ -9,7 +9,7 @@ const NavBar = ()=> {
       <nav className="">
         <div className="flex">
             <Link to={"/"}>
-              <img src={Logo} />
+              <img className"logo" src={Logo} />
             </Link>
           <div>
             <a>Categories</a>
