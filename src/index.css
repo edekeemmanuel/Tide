@@ -1,0 +1,8 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./style/reset.css";
+@import "./style/normalize.css";
+/*
+@import "tailwindcss/utilities";
+@import "./custom-utilities.css";*/
