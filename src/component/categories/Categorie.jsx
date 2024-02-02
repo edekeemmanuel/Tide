@@ -1,4 +1,4 @@
 const Categorie = ()=> {
-  return <h1>Welcome on board</h1>
+  return <h1>Categories</h1>
 }
 export default Categorie;

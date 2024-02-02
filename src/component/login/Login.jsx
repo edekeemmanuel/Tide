@@ -1,4 +1,15 @@
 const Login = ()=> {
-  return <h1>Login</h1>
+  const login = ()=>{
+    console.log("SignUp");
+  };
+  
+  return <button 
+            onClick={login} 
+            className="button" 
+            type="button"
+            name="login" 
+            autofocus="true" 
+            value="login" 
+            formtarget="_blank">Login</button>
 }
 export default Login;
