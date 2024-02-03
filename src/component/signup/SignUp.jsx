@@ -7,9 +7,8 @@ const SignUp = ()=> {
             onClick={signup} 
             className="button" 
             type="button" 
-            name="signup" 
-            autofocus="true" 
+            name="signup"
             value="signup" 
-            formtarget="_blank">Sign Up</button>
+            >Sign Up</button>
 }
 export default SignUp;

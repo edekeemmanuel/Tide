@@ -14,7 +14,7 @@ const NavBar = ()=> {
       <nav className="">
         <div className="flex">
             <Link to={"/"}>
-              <img className="logo" src={Logo} />
+              <img className="logo" src={Logo} alt="tide" />
             </Link>
           <div className="flex">
             <Link to="/"><Categorie /></Link>
@@ -33,7 +33,7 @@ const NavBar = ()=> {
             <div className="flex">
               <Link to="/login"><Login /></Link>
               <Link to="/register"><SignUp/></Link>
-              <Link to="/"><img className="logo" src={Mic} /></Link>
+              <Link to="/"><img className="logo" src={Mic} alt="microphone" /></Link>
             </div>
           </div>
         </div>

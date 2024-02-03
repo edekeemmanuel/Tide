@@ -8,8 +8,7 @@ const Login = ()=> {
             className="button" 
             type="button"
             name="login" 
-            autofocus="true" 
             value="login" 
-            formtarget="_blank">Login</button>
+            >Login</button>
 }
 export default Login;
