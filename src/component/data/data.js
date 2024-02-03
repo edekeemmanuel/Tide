@@ -54,3 +54,7 @@ export const recCourses =[
       rate: 4.7
     }
     ]
+    
+    export const company = ["About US", "Why TIDE", "Blog"]
+    export const resources = ["Categories", "Help & FAQ"]
+    export const quickLinks = ["Terms", "Privacy Policy", "Sitemap"]
