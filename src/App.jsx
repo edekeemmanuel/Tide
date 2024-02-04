@@ -1,17 +1,24 @@
-import { useState } from 'react';
-import './style/App.css';
-//import { Outlet} from "react-router-dom";
-import Home from "./component/homepage/Home.jsx";
-//import Home from "./component/homepage/sections/TopCat.jsx";
-
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Home, Dashboard, Login, Register, Error, Categories } from './pages';
+import SharedLayout from './pages/SharedLayout';
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Home />
-    </>
-  )
-}
+      <Router>
+        <Routes>
+          <Route path="/" element={<SharedLayout />}>
+            <Route index element={<Home />} />
 
-export default App
+            <Route path="categories" element={<Categories />} />
+          </Route>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </Router>
+    </>
+  );
+}
+//https://react-icons.github.io/react-icons/search?q=arrow
+export default App;

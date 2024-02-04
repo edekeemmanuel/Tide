@@ -58,3 +58,21 @@ export const recCourses =[
     export const company = ["About US", "Why TIDE", "Blog"]
     export const resources = ["Categories", "Help & FAQ"]
     export const quickLinks = ["Terms", "Privacy Policy", "Sitemap"]
+    export const tides = [
+      {
+      id: 10,
+      name: "Company",
+      list: ["About US", "Why TIDE", "Blog"]
+    },
+    {
+      id: 9,
+      name: "Resources",
+      list: ["Categories", "Help & FAQ"]
+    },
+    {
+      id: 8,
+      name: "Quick Links",
+      list: ["Terms", "Privacy Policy", "Sitemap"]
+    },
+    
+  ]

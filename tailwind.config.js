@@ -3,11 +3,15 @@ export default {
   relative: true,
   content: [
     './public/index.html',
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primaryColor: '#0F172B',
+      },
+    },
   },
   plugins: [],
-}
+};
