@@ -1,12 +1,17 @@
 import Image from '../../../assets/images/education-4796952_1920 1.png';
 import {company, resources, quickLinks} from "../../data/data.js"
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import Tides from "./tidesContainer.jsx";
+import {useGlobalContext} from "../../../GlobalContext.jsx";
+
 const Footer = () => {
+  const {name, tides} = useGlobalContext();
   return (
       <footer>
       <div className="flex">
       <div>
         <div className="flex">
+          <Tides />
           <div>
             <h2>Company</h2>
             <div className="">
