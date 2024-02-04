@@ -6,29 +6,12 @@
   box-sizing: inherit;
 }
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  max-width: 1280px;
-  margin-top: 0;
-  margin: 0 auto;
-  padding: 0rem 0.2rem;
-  text-align: center;
-  color-scheme: light dark;
-  color: black;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
- body{
+body {
   margin: 0;
   overflow: hidden;
   box-sizing: border-box;
@@ -36,7 +19,7 @@ html {
   min-height: 100vh;
   color: black;
   background-color: white;
- }
+}
 
 a,
 a:visited,
@@ -69,7 +52,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
 
 @media (prefers-color-scheme: light) {
   :root {

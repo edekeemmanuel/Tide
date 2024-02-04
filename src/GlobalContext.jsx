@@ -5,7 +5,7 @@ export const useGlobalContext = () => useContext(GlobalContext);
 
 const AppContext = ({children}) => {
   return (
-      <GlobalContext.Provider value={{name,tides}}>
+      <GlobalContext.Provider value={}>
         {children}
       </GlobalContext.Provider>
     )

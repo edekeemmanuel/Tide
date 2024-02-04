@@ -1,8 +1,53 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "./style/reset.css";
-@import "./style/normalize.css";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './style/reset.css';
+@import './style/normalize.css';
 /*
 @import "tailwindcss/utilities";
 @import "./custom-utilities.css";*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0f172b;
+}
+
+/* Firefox */
+/* For Firefox 64+ */
+* {
+  scrollbar-color: #0f172b rgba(0, 0, 0, 0.05);
+  scrollbar-width: thin;
+}
+
+.wrapper {
+  max-width: 80rem;
+  margin-inline: auto;
+  @apply px-6;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.hero {
+  grid-template-columns: 1fr;
+}
+@media only screen and (min-width: 767px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.font-heading {
+  font-size: clamp(1.2rem, 2vw + 1rem, 2.5rem);
+  @apply font-semibold tracking-wide;
+}
+.font-sub-heading {
+  font-size: clamp(1rem, 2vw + 1rem, 1.9rem);
+  @apply font-semibold tracking-wide;
+}
