@@ -7,6 +7,7 @@ import {
 
 import "./index.css";
 
+import AppContext from "./GlobalContext.jsx"
 import App from "./App.jsx";
 import ErrorPage from "./Error.jsx";
 import Home from "./component/homepage/Home.jsx";
@@ -43,6 +44,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AppContext>
+      <RouterProvider router={router} />
+    </AppContext>
   </React.StrictMode>
 );
