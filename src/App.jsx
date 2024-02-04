@@ -8,7 +8,6 @@ function App() {
         <Routes>
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Home />} />
-
             <Route path="categories" element={<Categories />} />
           </Route>
           <Route path="/login" element={<Login />} />

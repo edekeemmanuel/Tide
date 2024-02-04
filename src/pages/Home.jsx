@@ -1,10 +1,12 @@
 import Hero from '../component/homepage/Hero';
+import TopCategories from '../component/homepage/TopCategories';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Hero />
-    </div>
+      <TopCategories />
+    </>
   );
 };
 export default Home;

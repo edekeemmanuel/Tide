@@ -51,3 +51,25 @@ body {
   font-size: clamp(1rem, 2vw + 1rem, 1.9rem);
   @apply font-semibold tracking-wide;
 }
+.hero_img {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'hero-1 hero-3'
+    'hero-2 hero-3';
+}
+.hero-img1 {
+  grid-area: hero-1;
+}
+.hero-img2 {
+  grid-area: hero-2;
+}
+.hero-img3 {
+  grid-area: hero-3;
+}
+
+.bent-div {
+  height: 100px;
+  background-color: #6a589d; /* Set your desired background color */
+  transform: skewY(-10deg); /* Adjust the skewY value to control the slant */
+  z-index: 1;
+}
