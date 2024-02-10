@@ -7,9 +7,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
         
 import React, { useRef, useState } from 'react';
-import Slider, {Slide} from "./Slider";
-import {topCourses} from "./data.js";
-import {coverflowEffect} from "./swipeModules.js"
+import Slider, {Slide} from "../dashboard/Slider.jsx";
+import {topCourses} from "../common/data.js";
+import {coverflowEffect} from "../common/swipeModules.js"
 
 const TopCategories = () => {
   const clickable =true
