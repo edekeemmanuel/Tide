@@ -1,5 +1,5 @@
 import Navbar from '../component/dashboard/Navbar.jsx';
-import Courses from "./component/dashboard/Course"
+import Courses from "../component/dashboard/Course"
 //import Card from "./Card"
 import TopCategories from "./TopCategories"
 const Dashboard = () => {
