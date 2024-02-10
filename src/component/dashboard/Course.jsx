@@ -9,7 +9,7 @@ import 'swiper/css/scrollbar';
 
 import Slider, {Slide} from "./Slider";
 import {courses} from "../common/data.js";
-import {coverflowEffect} from "../common/data/swipeModules.js"
+import {coverflowEffect} from "../common/swipeModules.js"
 import TopCategories from "../homepage/TopCategories.jsx"
 
 const Courses = () => {
