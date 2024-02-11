@@ -3,7 +3,7 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
 // SwiperSlide is pretty self-explantory. it is one slide that would contain
 // one of data you want to show
-import {Navigation, Pagination, Scrollbar, EffectFade, Autoplay, A11y, EffectCoverflow, EffectCreative} from "swiper/modules";
+import {Navigation, Pagination, Scrollbar, EffectFade, Autoplay, A11y, EffectCoverflow, EffectCreative, FreeMode, Thumbs} from "swiper/modules";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -13,6 +13,8 @@ import 'swiper/css/scrollbar';
 import "swiper/css/autoplay";
 import "swiper/css/a11y";
 import "swiper/css/effect-fade";
+import 'swiper/css/free-mode';
+import 'swiper/css/thumbs';
 // install Swiper modules
 //SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 
@@ -42,7 +44,7 @@ const Slider = ({children, settings}) => {
 //     >
       <Swiper
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, EffectCreative]}
+        modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, EffectCreative, FreeMode, Thumbs]}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
         {...sliderOptions}

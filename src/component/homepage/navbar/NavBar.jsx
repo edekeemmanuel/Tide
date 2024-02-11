@@ -4,6 +4,7 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { FaBars } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
+import Logo from "../../../assets/images/theTide.jpg"
 
 const Navbar = () => {
   const [search, setSearch] = useState('');
@@ -19,7 +20,7 @@ const Navbar = () => {
               navigate('/');
             }}
           >
-            Tide
+            <img className="w-10 h-10" src={Logo}/>
           </div>
           <div className=" md:hidden cursor-pointer  text-xl ">
             <FaBars />
@@ -58,7 +59,7 @@ const Navbar = () => {
           <button className=" bg-white border-[#0F172B] border-2 text-[#0F172B]  hidden md:block">
             <Link to="/login">Register</Link>
           </button>
-          <FaMicrophone className="text-3xl text-[#0F172B]" cursor="pointer" />
+          <FaMicrophone className="text-4xl text-[#0F172B]" cursor="pointer" />
         </div>
       </div>
     </nav>

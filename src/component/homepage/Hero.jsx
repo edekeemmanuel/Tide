@@ -5,7 +5,7 @@ import vectorDots from './../../assets/images/Vector.svg';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 const Hero = () => {
   return (
-    <div className="hero bg-primaryColor mb-10 -z-12 overflow-hidden relative">
+    <div className="hero bg-primaryColor -z-12 overflow-hidden relative">
       <div className="bent-div absolute bottom-0 w-full left-0 right-0 "></div>
 
       <div className="wrapper  pt-[50px] pb-[60px]  md:pt-[100px] md:pb-[140px] gap-6 items-center md:flex md:flex-row-reverse">
