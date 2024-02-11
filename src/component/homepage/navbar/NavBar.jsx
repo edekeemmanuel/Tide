@@ -12,10 +12,10 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <nav className="bg-primaryColor text-white">
-      <div className="wrapper flex flex-col md:flex-row  w-full items-center  justify-between pt-8 md:pb-3">
+      <div className="wrapper flex flex-col md:flex-row  w-full items-center  justify-between pt-8 sm:pb-3">
         <div className="flex justify-between w-full md:w-fit mb-5 md:mb-0">
           <div
-            className="logo "
+            className="ps-4"
             onClick={() => {
               navigate('/');
             }}

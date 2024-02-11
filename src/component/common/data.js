@@ -9,6 +9,7 @@ import coding from "./../../assets/images/coding.png"
 import brain from "./../../assets/images/brain.png"
 import graph from "./../../assets/images/graph.png"
 import shopping from "./../../assets/images/online-shopping.png"
+export const heading = ["Welcome Samir 🖐", "Recommended Courses"];
 export const courses = [
   {
     id: uuidv4(),
@@ -52,7 +53,7 @@ export const topCourses = [
   {
     id: uuidv4(),
     image: brain,
-    text:"A.I.",
+    text:"AI",
     rate: 4.0
   },
   {
