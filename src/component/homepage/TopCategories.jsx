@@ -26,7 +26,7 @@ const TopCategories = () => {
         };
   
   return (
-    <section className="">
+    <main className="">
     <div className=" bg-[#6a589d] -z-12 overflow-hidden relative">
     <div className="bent-divI absolute bottom-0 w-full left-0 right-0 "></div>
 <div className="wrapper pb-[140px]">
@@ -54,12 +54,14 @@ const TopCategories = () => {
           key={slide.id ? slide.id : index}
         >
         <div className="rounded-lg border-2 border-solid border-neutral-400 outline outline-neutral-400 outline-offset-2 outline-1 hover:outline-2 p-10 bg-neutral-50"> 
+          <div className="flex items-center justify-center pb-5">
             <img 
-            className="px-9 pb-5 h-60 rounded-lg"
+            className="h-60 rounded-lg"
             src={slide?.image}
             alt={slide?.text}
             loading="lazy"
           />
+          </div>
           <div className="">
             <h2 className="text-center text-3xl">{slide.text}</h2>
           </div>
@@ -73,7 +75,7 @@ const TopCategories = () => {
           <span className="text-neutral-50 font-bold cursor-pointer" ref={progressContent}></span>
         </div>
     </Slider>
-     <div className="absolute left-[-10px] w-[50%] bottom-[20px] md:bottom-[-50px] -z-10">
+     <div className="absolute sm:left-[-10px] w-[50%] sm:bottom-[-80px] -z-14">
         <img src={vectorDots} alt="vector dots" />
       </div>
       <div className="absolute sm:right-[-310px] w-[50%] sm:top-[-70px] -z-14">
@@ -82,7 +84,7 @@ const TopCategories = () => {
   </div>
 </div>
   </div>
-  </section>
+  </main>
   );
 };
 export default TopCategories;
