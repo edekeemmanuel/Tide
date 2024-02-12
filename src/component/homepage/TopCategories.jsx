@@ -12,7 +12,9 @@ import {topCourses} from "../common/data.js";
 import {coverflowEffect} from "../common/swipeModules.js"
 import vectorDots from './../../assets/images/Vector.svg';
 
-const TopCategories = () => {
+const TopCategories = (props) => {
+  const {topCourse} = props;
+  const styleTop = topCourse ? "topCourse": "";
   const clickable =true;
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
@@ -27,7 +29,7 @@ const TopCategories = () => {
   
   return (
     <main className="">
-    <div className=" bg-[#6a589d] -z-12 overflow-hidden relative">
+    <div className={`${styleTop} bg-[#6a589d] -z-12 overflow-hidden relative`}>
     <div className="bent-divI absolute bottom-0 w-full left-0 right-0 "></div>
 <div className="wrapper pb-[140px]">
     <div className="flex justify-start" >

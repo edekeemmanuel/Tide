@@ -1,27 +1,46 @@
+
+
 import { useEffect, useState } from 'react';
 // import logo from '../assets/tv.png';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FaBars } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
-import Bell from "./../../assets/svg/bell.svg";
-import Logo from "./../../assets/svg/Logo.svg"
-import User from "./../../assets/svg/user-circle.svg"
-import Mic from "./../../assets/svg/mic.svg"
-import Menu from "./../../assets/svg/menu.svg"
+import { FaMicrophone } from 'react-icons/fa';
+import Logo from "../../assets/images/tide-logo-03.png"
+import Bell from "../../assets/svg/bell.svg";
+//import Logo from "./assets/Logo.svg"
+import User from "../../assets/svg/user-circle.svg"
+import { FaUserCircle } from "react-icons/fa";
+import { IoNotificationsSharp } from "react-icons/io5";
 
-const Navbar = () => {
+
+const Navbar = (props) => {
+  const styleCondition = props.primary ? "primary": "bg-primaryColor";
   const [search, setSearch] = useState('');
   const [open, setOpen] = useState(false);
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
-    <nav>
-      <div className="flex wrapper justify-between pt-7">
-        <div className="flex">
-          <a><img className="w-max" src={Logo} alt="#c4ae03"/></a>
+    <nav className={`${styleCondition} text-white`}>
+      <div className="wrapper flex flex-col md:flex-row  w-full items-center  justify-between pt-8 sm:pb-8">
+        <div className="flex justify-between w-full md:w-fit mb-5 md:mb-0">
+          <div
+            className="ps-4"
+            onClick={() => {
+              navigate('/');
+            }}
+          >
+            <img className="w-[100px] h-[50px]" src={Logo}/>
+          </div>
+          <div className=" md:hidden cursor-pointer  text-xl ">
+            <FaBars />
+          </div>
         </div>
-        <div className="flex items-center justify-center gap-x-4 pl-16">
-          <a className="text-4xl">Categories</a>
-          <div className="flex border-2 w-full border-neutral-500  rounded-full ">
+
+        <div className="flex items-center w-full md:w-fit gap-8">
+          <Link to="/categories" className=" text-xl hidden md:block">
+            Categories
+          </Link>
+          <div className="flex border-2 w-full hover:border-neutral-500 border-neutral-500  rounded-full">
             <button
               className=" w-fit p-0"
               type="button"
@@ -33,7 +52,7 @@ const Navbar = () => {
             </button>
             <input
               type="text"
-              className="bg-transparent  py-[10px] focus:border-transparent focus-within:border-transparent px-4 w-full placeholder:text-lg placeholder:text-neutral-500"
+              className="bg-transparent  py-[10px] focus:border-neutral-50 focus-within:border-neutral-50 px-3 w-full placeholder:text-sm placeholder:text-neutral-50"
               value={search}
               placeholder="What do you want to learn"
               onChange={(e) => {
@@ -42,19 +61,23 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <div className="flex items-center justify-end gap-x-4 ps-20 ">
-          <a className="text-4xl ">My Classes</a>
+        <div className="flex gap-4 text-white items-center">
+          <a className="text-xl ">My Classes</a>
           <div className="flex">
-            <a><img className="size-9" src={Bell}  /></a>
-            <a className="px-5"><img className="size-9" src={User} /></a>
-            <a><img className="size-8" src={Mic}  /></a>
+          <Link to="/">
+          <IoNotificationsSharp className="text-2xl text-neutral-50" cursor="pointer"/>
+          </Link>
+          <Link className="px-3" to="/">
+          <FaUserCircle className="text-2xl text-neutral-50" cursor="pointer " />
+          </Link>
+          <Link to="/">
+          <FaMicrophone className="text-2xl text-neutral-50" cursor="pointer" />
+          </Link>
           </div>
-        </div>
-        <div>
-            <button className="hidden pl-5" ><img className="size-12" src={Menu}/></button>
         </div>
       </div>
     </nav>
   );
 };
 export default Navbar;
+

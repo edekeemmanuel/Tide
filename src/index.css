@@ -68,7 +68,17 @@ body {
 .hero-img3 {
   grid-area: hero-3;
 }
-
+.primary{
+  background-color: #6a589d;
+}
+.course {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.topCourse {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .bent-div {
   height: 100px;
   background-color: #6a589d; /* Set your desired background color */
