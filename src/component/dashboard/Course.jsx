@@ -50,7 +50,7 @@ const Courses = (props) => {
           />
           <div className=" flex flex-col justify-center items-center">
             <h2 data-swiper-parallax="-5" className="text-neutral-50 pt-4 text-xl">{slide.text}</h2>
-            <button data-swiper-parallax="-30"
+            <button data-swiper-parallax="-50"
               className="bg-purple-800 md:mt-4 rounded-md  mx-auto  md:mx-0 pt-4 md:pt-4 pb-3 md:pb-[13px] px-8 lg:px-[40px]  w-fit text-[#0F172B] font-bold cursor-pointer text-neutral-50"
               type="submit"
               name="Apply"
