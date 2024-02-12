@@ -13,10 +13,11 @@ import {courses} from "../common/data.js";
 
 const Courses = (props) => {
   const dynamicBullets = true ?? "clickable";
-  const {heading} = props;
+  const {heading, course} = props;
+  const styleCourse = course ? "course": "";
   return (
 <main className="">
-    <div className=" bg-primaryColor -z-12 overflow-hidden relative">
+    <div className={`${styleCourse} bg-primaryColor -z-12 overflow-hidden relative`}>
     <div className="bent-div absolute bottom-0 w-full left-0 right-0 "></div>
 <div className="wrapper pb-[140px]">
     <div className="flex justify-start" >
@@ -49,7 +50,7 @@ const Courses = (props) => {
             alt={slide?.text}
           />
           <div className=" flex flex-col justify-center items-center">
-            <h2 data-swiper-parallax="-5" className="text-neutral-50 pt-4 text-xl">{slide.text}</h2>
+            <h2 data-swiper-parallax="-5" className="text-neutral-50 pt-4 text-lg">{slide.text}</h2>
             <button data-swiper-parallax="-50"
               className="bg-purple-800 md:mt-4 rounded-md  mx-auto  md:mx-0 pt-4 md:pt-4 pb-3 md:pb-[13px] px-8 lg:px-[40px]  w-fit text-[#0F172B] font-bold cursor-pointer text-neutral-50"
               type="submit"

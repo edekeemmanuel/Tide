@@ -4,7 +4,7 @@ import Nav from '../component/homepage/navbar/NavBar';
 const SharedLayout = () => {
   return (
     <div>
-      <Nav />
+      <Nav primary={false}/>
       <Outlet />
     </div>
   );

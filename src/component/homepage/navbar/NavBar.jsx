@@ -59,7 +59,7 @@ const Navbar = () => {
           <button className=" bg-white border-[#0F172B] border-2 text-[#0F172B]  hidden md:block">
             <Link to="/login">Register</Link>
           </button>
-          <FaMicrophone className="text-4xl text-[#0F172B]" cursor="pointer" />
+          <FaMicrophone className="text-4xl text-neutral-50" cursor="pointer" />
         </div>
       </div>
     </nav>

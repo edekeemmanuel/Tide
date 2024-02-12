@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <TopCategories />
-      <Courses heading={newHeading[1]}/>
+      <TopCategories topCourse={false}/>
+      <Courses course={false} heading={newHeading[1]}/>
     <div className="bg-[#6a589d]">
       <div className="flex justify-center items-center max-w-[32em] md:mt-0 relative z-10 md:flex-1 md:max-w-full w-full mx-auto md:mx-0 justify-center flex-col md:pr-6  md:pl-5 text-center md:text-left text-white py-[200px]">
           <h1 className="font-heading mb-4 ">
@@ -27,7 +27,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <Footer />
+      <Footer primary={false}/>
     </>
   );
 };
