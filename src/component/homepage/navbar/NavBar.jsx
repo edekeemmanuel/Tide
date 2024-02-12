@@ -58,7 +58,7 @@ const Navbar = (props) => {
             <Link to="/login">Login</Link>
           </button>
           <button className=" bg-white border-[#0F172B] border-2 text-[#0F172B]  hidden md:block">
-            <Link to="/login">Register</Link>
+            <Link to="/register">Register</Link>
           </button>
           <FaMicrophone className="text-4xl text-neutral-50" cursor="pointer" />
         </div>
