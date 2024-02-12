@@ -1,7 +1,7 @@
 import Navbar from '../component/homepage/navbar/NavBar';
 import Footer from '../component/homepage/footer/Footer.jsx';
 import Forms from '../component/homepage/Form';
-import imgLogin from "./../assets/images/sign-up-girl-img-01.png"
+import imgsignup from "./../assets/images/sign-up-girl-img-01.png"
 import { Link } from 'react-router-dom';
 
 const Login = () => {
@@ -32,7 +32,7 @@ const Login = () => {
         </div>
         <div>
           <div>
-            <img src={imgLogin} />
+            <img src={imgsignup} />
           </div>
         </div>
       </div>
