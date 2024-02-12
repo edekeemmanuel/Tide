@@ -1,9 +1,10 @@
 // Render Prop
-import React from 'react';
+import React, {useState} from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { Link } from 'react-router-dom';
 
-const Forms = () => (
+const Forms = (props) => (
+  //const [name, setName] = useState(false)
   <div className="">
     <Formik
       initialValues={{ email: '', password: '' }}
