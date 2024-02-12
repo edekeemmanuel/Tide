@@ -6,12 +6,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FaMicrophone } from 'react-icons/fa';
 import Logo from "../../../assets/images/tide-logo-03.png"
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const styleCondition = props.primary ? "primary": "bg-primaryColor";
   const [search, setSearch] = useState('');
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   return (
-    <nav className="bg-primaryColor text-white">
+    <nav className={`${styleCondition} text-white`}>
       <div className="wrapper flex flex-col md:flex-row  w-full items-center  justify-between pt-8 sm:pb-8">
         <div className="flex justify-between w-full md:w-fit mb-5 md:mb-0">
           <div
