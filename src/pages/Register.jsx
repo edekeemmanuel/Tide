@@ -1,4 +1,4 @@
-import Navbar from '../component/dashboard/Navbar.jsx';
+import Navbar from '../component/homepage/navbar/NavBar';
 import Footer from '../component/homepage/footer/Footer.jsx';
 
 const Register = () => {
