@@ -1,7 +1,7 @@
 import Navbar from '../component/homepage/navbar/NavBar';
 import Footer from '../component/homepage/footer/Footer.jsx';
 import Forms from '../component/homepage/Form';
-import imgLogin from "./../assets/images/sign-in-guy-img-01.png"
+import imgLogin from "./../assets/images/sign-up-girl-img-01.png"
 import { Link } from 'react-router-dom';
 
 const Login = () => {
@@ -12,7 +12,7 @@ const Login = () => {
       <div className="flex wrapper">
         <div>
           <div>
-            <h1> Sign in to your account.</h1>
+            <h1>Create an account.</h1>
             <p>Build skills for today, tomorrow and beyond Education will help you to secure your future work opportunities.</p>
           </div>
           <div>
